@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="robots" content="noindex">
+  <title>Chen Chen's Problem Set 4</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <div class="header">
+    <p>Hi! This is Chen Chen from course SI 579. I'm going to introduce you my favourite artist Georgia O'Keeffe.</p>
+  </div>
+  <a-scene>
+    <a-assets>
+<!-- width= 987, height= 739 -->
+       <img id="img1" src="assets/p1.png"/>
+      </a-assets>
+      <a-image src="assets/p1.png" position="0 1.5 -3"></a-image>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <a-sky color="#ECECEC"></a-sky>
+  </a-scene>
+  <div class="content">
+    <h2>Profile</h2>
+    <div class="grid-container width-70">
+      <ul class="grid-item">
+        <li>Name: <a href="https://en.wikipedia.org/wiki/Georgia_O%27Keeffe">Georgia O'Keeffe</a></li>
+        <li>Movement: American modernism, Precisionism</li>
+        <li>Bio:Georgia Totto O'Keeffe (November 15, 1887 - March 6, 1986) was an American artist. She was known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the "Mother of American modernism".</li>
+      </ul>
+      <img src="assets/profile.jpg" alt="Georgia O'Keeffe picture" class="profile grid-item">
+    </div>
+    <h2>Works</h2>
+    <p class="instruction">click on images to read articles</p>
+    <table>
+      <tr>
+        <td><a href="https://news.artnet.com/exhibitions/georgia-okeeffe-show-of-the-day-1813674"><img src="assets/p1.png" class="painting"></a></td>
+        <td><a href="https://www.moma.org/collection/works/78677"><img src="assets/p2.jpg" class="painting"></a></td>
+      </tr>
+      <tr>
+        <td><a href="https://artdependence.com/articles/the-symbolism-of-flowers-in-the-art-of-georgia-o-keeffe/"><img src="assets/p3.jpg" class="painting"></a></td>
+        <td><img src="assets/p4.jpg" class="painting"></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src = "js/index.js"></script>
+</body>
+</html>
