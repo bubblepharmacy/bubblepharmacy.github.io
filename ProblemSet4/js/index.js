@@ -15,3 +15,10 @@
 // Implement a comment widget to your personal website (we'll talk about how to store things later on)
 // Implement a todo list
 // Implement a shopping cart
+
+
+// document.getElementByClass("close-button").onclick = closeBanner;
+
+function closeBanner(){
+  document.getElementsByClassName("header").display = "none";
+}

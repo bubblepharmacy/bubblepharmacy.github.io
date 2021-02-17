@@ -4,12 +4,15 @@
   <meta name="robots" content="noindex">
   <title>Chen Chen's Problem Set 4</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src = "js/index.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
   <div class="header">
+    <div class="close-button" onclick="closeBanner()"><span class="iconify" data-icon="fa:close"></span></div>
     <p>Hi! This is Chen Chen from course SI 579. I'm going to introduce you my favourite artist Georgia O'Keeffe.</p>
   </div>
   <div class="content">
@@ -42,10 +45,10 @@
          <img id="img3" src="assets/p3.jpg"/>
          <img id="img4" src="assets/p4.jpg"/>
       </a-assets>
-      <a-image src="assets/p1.png" position="-3 1.5 -2"></a-image>
-      <a-image src="assets/p2.jpg" position="-1 1.5 -2"></a-image>
-      <a-image src="assets/p3.jpg" position="1 1.5 -2"></a-image>
-      <a-image src="assets/p4.jpg" position="3 1.5 -2"></a-image>
+      <a-image src="assets/p1.png" position="-3 1.5 -2" width="1.66" height="2"></a-image>
+      <a-image src="assets/p2.jpg" position="-1 1.5 -2" width="1.498" height="2"></a-image>
+      <a-image src="assets/p3.jpg" position="1 1.5 -2" width="1.486" height="2"></a-image>
+      <a-image src="assets/p4.jpg" position="3 1.5 -2" width="1.47" height="2"></a-image>
 
       <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="4" color="#C5BBD1"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
@@ -53,6 +56,5 @@
 
   </div>
 
-  <script src = "js/index.js"></script>
 </body>
 </html>
