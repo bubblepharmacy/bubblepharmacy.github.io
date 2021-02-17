@@ -41,6 +41,7 @@ h1, h2 {
 .profile {
   height: 240px;
   object-fit: contain;
+  transition: 1s;
 }
 ul {
   list-style-type: square;
@@ -67,6 +68,7 @@ a-scene {
   margin-top: 6px;
   width: 16px;
   height: 16px;
+  padding: 2px;
 }
 .close-button:hover {
   background-color: #C5BBD1;

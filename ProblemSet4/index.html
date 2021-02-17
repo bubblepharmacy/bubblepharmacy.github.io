@@ -5,13 +5,13 @@
   <title>Chen Chen's Problem Set 4</title>
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  <script src = "js/index.js"></script>
+  <script src = "js/index.js" defer></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <div class="header">
+  <div class="header" id="header">
     <div class="close-button" onclick="closeBanner()"><span class="iconify" data-icon="fa:close"></span></div>
     <p>Hi! This is Chen Chen from course SI 579. I'm going to introduce you my favourite artist Georgia O'Keeffe.</p>
   </div>
@@ -23,7 +23,7 @@
         <li>Movement: American modernism, Precisionism</li>
         <li>Bio:Georgia Totto O'Keeffe (November 15, 1887 - March 6, 1986) was an American artist. She was known for her paintings of enlarged flowers, New York skyscrapers, and New Mexico landscapes. O'Keeffe has been recognized as the "Mother of American modernism".</li>
       </ul>
-      <img src="assets/profile.jpg" alt="Georgia O'Keeffe picture" class="profile grid-item">
+      <img src="assets/profile.jpg" alt="Georgia O'Keeffe picture" class="profile grid-item" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
     </div>
     <h2>Works</h2>
     <!-- <p class="instruction">click on images to read articles</p>

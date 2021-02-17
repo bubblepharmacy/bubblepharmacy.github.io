@@ -20,5 +20,26 @@
 // document.getElementByClass("close-button").onclick = closeBanner;
 
 function closeBanner(){
-  document.getElementsByClassName("header").display = "none";
+  document.getElementById("header").remove();
+}
+
+function bigImg(x) {
+  x.style.height = "260px";
+  x.style.boxShadow = "2px 2px 4px 4px";
+}
+
+function normalImg(x) {
+  x.style.height = "240px";
+  x.style.boxShadow = "none";
+}
+
+var h2s = document.getElementsByTagName("h2");
+var i;
+for(i=0; i<h2s.length; i++){
+  h2s[i].addEventListener("mouseover", function(){
+    this.style.textDecoration="underline";
+  }, false);
+  h2s[i].addEventListener("mouseout", function(){
+    this.style.textDecoration="none";
+  }, false);
 }
